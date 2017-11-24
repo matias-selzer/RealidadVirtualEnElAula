@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: 4467faf19caa8d143a29b8add4965d3a
+timeCreated: 1511538569
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body
+    100004: //RootNode
+    100006: com_bm_boat01
+    100008: floor
+    100010: hamon
+    100012: parts_a
+    100014: parts_b
+    100016: parts_c
+    100018: room
+    100020: vsn_mesh_0_mesh0
+    100022: vsn_mesh_1_mesh1
+    100024: vsn_mesh_2_mesh2
+    100026: vsn_mesh_3_mesh3
+    100028: vsn_mesh_4_mesh4
+    100030: vsn_mesh_5_mesh5
+    100032: vsn_mesh_6_mesh6
+    100034: vsn_mesh_7_mesh7
+    400000: Armature
+    400002: body
+    400004: //RootNode
+    400006: com_bm_boat01
+    400008: floor
+    400010: hamon
+    400012: parts_a
+    400014: parts_b
+    400016: parts_c
+    400018: room
+    400020: vsn_mesh_0_mesh0
+    400022: vsn_mesh_1_mesh1
+    400024: vsn_mesh_2_mesh2
+    400026: vsn_mesh_3_mesh3
+    400028: vsn_mesh_4_mesh4
+    400030: vsn_mesh_5_mesh5
+    400032: vsn_mesh_6_mesh6
+    400034: vsn_mesh_7_mesh7
+    2100000: Comb9_mat_001
+    2100002: Comb7_mat_001
+    2100004: Comb8_mat_001
+    2100006: pasted__hamon_mat_001
+    4300000: vsn_mesh_0_mesh0
+    4300002: vsn_mesh_1_mesh1
+    4300004: vsn_mesh_2_mesh2
+    4300006: vsn_mesh_3_mesh3
+    4300008: vsn_mesh_4_mesh4
+    4300010: vsn_mesh_5_mesh5
+    4300012: vsn_mesh_6_mesh6
+    4300014: vsn_mesh_7_mesh7
+    9500000: //RootNode
+    13700000: vsn_mesh_0_mesh0
+    13700002: vsn_mesh_1_mesh1
+    13700004: vsn_mesh_2_mesh2
+    13700006: vsn_mesh_3_mesh3
+    13700008: vsn_mesh_4_mesh4
+    13700010: vsn_mesh_5_mesh5
+    13700012: vsn_mesh_6_mesh6
+    13700014: vsn_mesh_7_mesh7
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

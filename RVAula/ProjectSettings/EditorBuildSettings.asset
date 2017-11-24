@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/GoogleVR/Demos/Scenes/GVRDemo.unity
     guid: bb36d2905dc634f1c9eecb35beecaca8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TerrenoPrueba.unity
     guid: 452952ca7b7907a408880fbb7114f24b
+  - enabled: 1
+    path: Assets/Scenes/EscenaHumedal.unity
+    guid: c16f1342f9e2566408a60882ffe1764e

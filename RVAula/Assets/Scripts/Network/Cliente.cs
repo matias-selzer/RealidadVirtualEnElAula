@@ -31,21 +31,25 @@ public class Cliente : MonoBehaviour {
 		nombre = inputNombre.text;
 		connectionIP = inputIP.text;
 		connectionPort = inputPort.text;
-
+		Debug.Log ("me intento conectar a " + connectionIP + ":" + connectionPort);
 		coord.clientConnect (connectionIP,connectionPort);
-		coord.enviarAServidor ("nombre&" + connectionIP + "&" + nombre);
+
 		SceneManager.LoadScene("PantallaEspera");
 	}
 
 	public void iniciarSinConexion(){
 		trabajarConConexion = false;
-		//arrancar recorrido
+		SceneManager.LoadScene("EscenaHumedal");
 	}
 
 
 	public void comenzar(){
 		//iiniciar recorrido
 		SceneManager.LoadScene("EscenaHumedal");
+	}
+
+	public void conexionEstablecida(){
+		coord.enviarAServidor ("nombre&" + connectionIP + "&" + nombre);
 	}
 
 

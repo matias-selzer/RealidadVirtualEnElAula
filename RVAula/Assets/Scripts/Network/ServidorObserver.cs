@@ -13,4 +13,8 @@ public class ServidorObserver : Observer {
 	public override void consumirMensaje(string mensaje){
 
 	}
+
+	public override void conexionEstablecida(){
+		//cliente.conexionEstablecida ();
+	}
 }

@@ -23,8 +23,12 @@ public class CoordinadorDeRed : MonoBehaviour {
 	}
 
 	public void clientConnect(string connectionIP,string connectionPort){
-		Network.Connect(connectionIP, connectionPort);
+		Network.Connect (connectionIP, int.Parse (connectionPort));
 		Debug.Log ("Conectando a " + connectionIP + " por el puerto " + connectionPort);
+	}
+
+	void OnConnectedToServer(){
+		observador.conexionEstablecida ();
 	}
 
 

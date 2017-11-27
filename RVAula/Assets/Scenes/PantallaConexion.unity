@@ -417,7 +417,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 400912646}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1510863283}
+        m_MethodName: iniciarSinConexion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &400912646
@@ -550,7 +561,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 25001
+  m_Text: 25005
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -728,13 +739,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 774388423}
   m_TextComponent: {fileID: 1710831722}
   m_Placeholder: {fileID: 1495806143}
-  m_ContentType: 4
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 1
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 3
+  m_CharacterValidation: 0
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1002,7 +1013,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1510863283}
-        m_MethodName: comenzar
+        m_MethodName: "iniciarConexi\xF3n"
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1387,13 +1398,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1364506843}
   m_TextComponent: {fileID: 1645310562}
   m_Placeholder: {fileID: 25789553}
-  m_ContentType: 4
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 1
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 3
+  m_CharacterValidation: 0
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1408,7 +1419,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 192.168.10.10
+  m_Text: 192.168.15.16
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -1529,6 +1540,7 @@ GameObject:
   - component: {fileID: 1510863282}
   - component: {fileID: 1510863281}
   - component: {fileID: 1510863283}
+  - component: {fileID: 1510863284}
   m_Layer: 0
   m_Name: CoordinadorDeRed
   m_TagString: Untagged
@@ -1579,6 +1591,18 @@ MonoBehaviour:
   inputNombre: {fileID: 774388422}
   inputIP: {fileID: 1364506842}
   inputPort: {fileID: 525722611}
+--- !u!148 &1510863284
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1510863280}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 1510863282}
+  m_ViewID:
+    m_ID: 1
+    m_Type: 1
 --- !u!1 &1530973884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,7 +1838,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 192.168.10.10
+  m_Text: 192.168.15.16
 --- !u!222 &1645310563
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2036,7 +2060,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 25001
+  m_Text: 25005
 --- !u!222 &1760649551
 CanvasRenderer:
   m_ObjectHideFlags: 0

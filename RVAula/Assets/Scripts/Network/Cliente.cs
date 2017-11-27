@@ -1,40 +1,52 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Cliente : MonoBehaviour {
 
+	public CoordinadorDeRed coord;
+	public bool trabajarConConexion=true;
+
 	public string connectionIP="127.0.0.1";
-	public int connectionPort=25001;
-	NetworkView networkView;
+	public string connectionPort=25001+"";
+	public string nombre;
+
+	public InputField inputNombre;
+	public InputField inputIP;
+	public InputField inputPort;
+
 
 	// Use this for initialization
 	void Start () {
-		networkView = new NetworkView ();
-	}
-	
-	public void clientConnect(){
-		Network.Connect(connectionIP, connectionPort);
+		//networkView = new NetworkView ();
+		coord.setearObserver(new ClienteObserver(this));
 	}
 
 
-	[RPC]
-	void transmitirMensaje(string msg)
-	{
-		
-	}
-
-	public void enviar(){
-		networkView.RPC("transmitirMensaje", RPCMode.Others, "mensaje de prueba");
-	}
 
 
-	void Update(){
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			clientConnect ();
-		}
-		if (Input.GetKeyDown (KeyCode.LeftControl)) {
-			enviar ();
-		}
+	public void iniciarConexión(){
+		nombre = inputNombre.text;
+		connectionIP = inputIP.text;
+		connectionPort = inputPort.text;
+
+		coord.clientConnect (connectionIP,connectionPort);
+		coord.enviarAServidor ("nombre&" + connectionIP + "&" + nombre);
+		SceneManager.LoadScene("PantallaEspera");
 	}
+
+	public void iniciarSinConexion(){
+		trabajarConConexion = false;
+		//arrancar recorrido
+	}
+
+
+	public void comenzar(){
+		//iiniciar recorrido
+		SceneManager.LoadScene("EscenaHumedal");
+	}
+
+
 }

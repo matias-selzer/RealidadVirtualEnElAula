@@ -7,7 +7,7 @@ public class Evento : MonoBehaviour {
 	private ControladorGeneral controlador;
 
 	// Use this for initialization
-	void Awake () {
+	void Start () {
 		controlador = GameObject.Find ("ControladorGeneral").GetComponent<ControladorGeneral>() ;
 	}
 	

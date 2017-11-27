@@ -17,6 +17,7 @@ public class Recorrido : MonoBehaviour {
 	void Start () {
 		pos = 0;
 		target = posiciones [pos];
+		GameObject.Find ("ControladorGeneral").GetComponent<ControladorGeneral> ().establecerRecorrido (this);
 	}
 	
 	// Update is called once per frame
@@ -33,9 +34,7 @@ public class Recorrido : MonoBehaviour {
 					target = posiciones [pos];
 					hayQueAvanzar = false;
 					ControladorPointer.activo = true;
-				} else {
-					pos = 0;
-				}
+				} 
 			}
 		}
 	}

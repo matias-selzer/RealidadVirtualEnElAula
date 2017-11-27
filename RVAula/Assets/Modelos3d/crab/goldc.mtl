@@ -1,0 +1,9 @@
+
+newmtl Material.000001
+Ka 0.921569 0.921569 0.921569
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+d 1
+Ns 10
+map_Kd gold.png
+

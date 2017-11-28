@@ -561,7 +561,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 25005
+  m_Text: 25001
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -821,7 +821,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 826591936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000030517578, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.00065612793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1159866565}
@@ -838,8 +838,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 0}
-  m_SizeDelta: {x: 720, y: 444}
+  m_AnchoredPosition: {x: 0, y: 0.00065994}
+  m_SizeDelta: {x: 800, y: 493.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826591938
 MonoBehaviour:
@@ -1591,6 +1591,7 @@ MonoBehaviour:
   inputNombre: {fileID: 774388422}
   inputIP: {fileID: 1364506842}
   inputPort: {fileID: 525722611}
+  respuestas: 
 --- !u!148 &1510863284
 NetworkView:
   m_ObjectHideFlags: 0
@@ -2060,7 +2061,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 25005
+  m_Text: 25001
 --- !u!222 &1760649551
 CanvasRenderer:
   m_ObjectHideFlags: 0

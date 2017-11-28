@@ -8,18 +8,27 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/GoogleVR/Demos/Scenes/GVRDemo.unity
     guid: bb36d2905dc634f1c9eecb35beecaca8
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: 8dee64a24612fef40a826abf3f4e029d
   - enabled: 0
-    path: Assets/Scenes/TerrenoPrueba.unity
-    guid: 452952ca7b7907a408880fbb7114f24b
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/PantallaConexion.unity
+    guid: 7617ddf4435aa9d4b85a5d49fd552811
   - enabled: 1
     path: Assets/Scenes/EscenaHumedal.unity
     guid: c16f1342f9e2566408a60882ffe1764e
   - enabled: 0
-    path: Assets/Scenes/Cliente.unity
-    guid: ceba8b267c826ae43b367aef57720746
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/ServidorPrueba.unity
-    guid: f9a4ffe6d17effd4498edc28a6919aba
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/PantallaEspera.unity
     guid: 08dff35115549bc498e9c92d852592f4
+  - enabled: 1
+    path: Assets/Scenes/PantallaServidor.unity
+    guid: c481009e792471840a2acc1700936bd8

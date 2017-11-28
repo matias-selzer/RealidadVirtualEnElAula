@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0e23368a1b3e44a34e48f76d9f402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceRespuesta: 1
+  indiceRespuesta: 3
 --- !u!114 &92247775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,7 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0e23368a1b3e44a34e48f76d9f402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceRespuesta: 1
+  indiceRespuesta: 2
 --- !u!114 &156073768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1793,7 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0e23368a1b3e44a34e48f76d9f402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceRespuesta: 1
+  indiceRespuesta: 2
 --- !u!114 &343957900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3769,7 +3769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0e23368a1b3e44a34e48f76d9f402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceRespuesta: 1
+  indiceRespuesta: 3
 --- !u!114 &606533495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6728,7 +6728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0e23368a1b3e44a34e48f76d9f402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceRespuesta: 1
+  indiceRespuesta: 2
 --- !u!114 &1057379935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10760,7 +10760,7 @@ MonoBehaviour:
   - {fileID: 1145154777}
   - {fileID: 1863575805}
   camara: {fileID: 1765287140}
-  speed: 10
+  speed: 5
   rotationSpeed: 0.5
   umbralDistancia: 1
   hayQueAvanzar: 1
@@ -12458,7 +12458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0e23368a1b3e44a34e48f76d9f402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceRespuesta: 1
+  indiceRespuesta: 2
 --- !u!114 &1305221158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13460,7 +13460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0e23368a1b3e44a34e48f76d9f402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceRespuesta: 1
+  indiceRespuesta: 2
 --- !u!114 &1497121734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13598,7 +13598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0e23368a1b3e44a34e48f76d9f402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceRespuesta: 1
+  indiceRespuesta: 3
 --- !u!114 &1506742854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15083,6 +15083,7 @@ GameObject:
   - component: {fileID: 1765287139}
   - component: {fileID: 1765287138}
   - component: {fileID: 1765287137}
+  - component: {fileID: 1765287141}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15158,6 +15159,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 197.55, z: 0}
+--- !u!114 &1765287141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1765287136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdbfc623e6891843b560a3ff501ba94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1781175112
 Prefab:
   m_ObjectHideFlags: 0

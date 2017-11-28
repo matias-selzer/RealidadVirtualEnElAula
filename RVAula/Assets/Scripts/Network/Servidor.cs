@@ -17,6 +17,10 @@ public class Servidor : MonoBehaviour {
 	private int cConectados;
 	private List<string> listaAlumnosParaMostrar;
 
+	public Text cuadroTexto;
+
+	public GameObject panelResultados;
+
 	private Dictionary<string,Usuario> usuarios;
 
 	// Use this for initialization
@@ -24,8 +28,21 @@ public class Servidor : MonoBehaviour {
 		listaAlumnosParaMostrar = new List<string> ();
 		usuarios = new Dictionary<string,Usuario> ();
 		fieldIP.text=(Network.player.ipAddress);
+
+		/*listaAlumnosRes.onValueChanged.AddListener(delegate{
+			seleccionarUsuarioParaMostrar(listaAlumnosRes.options[listaAlumnosRes.value].text+"");
+		});*/
+
 		networkView = GetComponent<NetworkView> ();
 		//initializeServer();
+	}
+
+	public void seleccionarUsuarioParaMostrar(){
+		string ip = (listaAlumnosRes.options[listaAlumnosRes.value].text+"").Split ('-') [1];
+		Debug.Log ("ip: " + ip);
+		Usuario u;
+		usuarios.TryGetValue(ip,out u);
+		cuadroTexto.text = u.respuestas;
 	}
 	
 	public void initializeServer(){
@@ -39,6 +56,7 @@ public class Servidor : MonoBehaviour {
 
 	public void comenzarRecorrido(){
 		coord.enviarAClientes ("comenzar&"+connectionIP);
+		panelResultados.SetActive (true);
 	}
 
 
@@ -60,6 +78,7 @@ public class Servidor : MonoBehaviour {
 		listaAlumnosRes.options.Clear ();
 		listaAlumnos.AddOptions (listaAlumnosParaMostrar);
 		listaAlumnosRes.AddOptions (listaAlumnosParaMostrar);
+
 	}
 
 	public void asignarRespuestas(string ip, string respuesta){
@@ -67,6 +86,7 @@ public class Servidor : MonoBehaviour {
 		usuarios.TryGetValue (ip, out u);
 		u.respuestas = respuesta;
 	}
+
 
 
 

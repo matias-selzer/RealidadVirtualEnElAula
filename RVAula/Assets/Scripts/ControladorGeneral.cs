@@ -21,7 +21,8 @@ public class ControladorGeneral : MonoBehaviour {
 		recorrido.avanzar ();
 	}
 
-	public void preguntaRespondida(){
+	public void preguntaRespondida(string respuesta){
+		cliente.enviarRespuesta (respuesta);
 		continuarRecorrido ();
 	}
 

@@ -17,6 +17,8 @@ public class Cliente : MonoBehaviour {
 	public InputField inputIP;
 	public InputField inputPort;
 
+	public string respuestas="";
+
 
 	// Use this for initialization
 	void Start () {
@@ -50,6 +52,13 @@ public class Cliente : MonoBehaviour {
 
 	public void conexionEstablecida(){
 		coord.enviarAServidor ("nombre&" + connectionIP + "&" + nombre);
+	}
+
+	public void enviarRespuesta(string respuesta){
+		if (trabajarConConexion) {
+			respuestas += "\n--- PREGUNTA ---\n" + respuesta;
+			coord.enviarAServidor ("respuestas&" + connectionIP + "&" + respuestas);
+		}
 	}
 
 

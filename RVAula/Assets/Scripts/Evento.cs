@@ -17,8 +17,8 @@ public class Evento : MonoBehaviour {
 	}
 
 
-	public void avisarEventoFinalizado(){
-		controlador.preguntaRespondida ();
+	public void avisarEventoFinalizado(string respuesta){
+		controlador.preguntaRespondida (respuesta);
 	}
 
 }

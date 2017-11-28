@@ -18,8 +18,14 @@ public class Pregunta : MonoBehaviour {
 	}
 
 	public void asignarRespuesta(int r){
-		respuesta = r + "";
-		miEvento.avisarEventoFinalizado ();
+		rElegida = r + "";
+		string salida = pregunta + "\n" + rElegida;
+		if (rElegida.Equals (respuesta)) {
+			salida += "\nCORRECTO";
+		} else {
+			salida+="\nINCORRECTO";
+		}
+		miEvento.avisarEventoFinalizado (salida);
 	}
 
 

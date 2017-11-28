@@ -18,10 +18,12 @@ public class Cliente : MonoBehaviour {
 	public InputField inputPort;
 
 	public string respuestas="";
+	private string miIp;
 
 
 	// Use this for initialization
 	void Start () {
+		miIp = Network.player.ipAddress;
 		//networkView = new NetworkView ();
 		coord.setearObserver(new ClienteObserver(this));
 	}
@@ -51,13 +53,13 @@ public class Cliente : MonoBehaviour {
 	}
 
 	public void conexionEstablecida(){
-		coord.enviarAServidor ("nombre&" + connectionIP + "&" + nombre);
+		coord.enviarAServidor ("nombre&" + miIp + "&" + nombre);
 	}
 
 	public void enviarRespuesta(string respuesta){
 		if (trabajarConConexion) {
 			respuestas += "\n--- PREGUNTA ---\n" + respuesta;
-			coord.enviarAServidor ("respuestas&" + connectionIP + "&" + respuestas);
+			coord.enviarAServidor ("respuestas&" + miIp + "&" + respuestas);
 		}
 	}
 

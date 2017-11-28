@@ -22,6 +22,7 @@ public class Servidor : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		listaAlumnosParaMostrar = new List<string> ();
+		usuarios = new Dictionary<string,Usuario> ();
 		fieldIP.text=(Network.player.ipAddress);
 		networkView = GetComponent<NetworkView> ();
 		//initializeServer();
@@ -55,6 +56,8 @@ public class Servidor : MonoBehaviour {
 
 		// Incorporo el usuario al dropdown
 		listaAlumnosParaMostrar.Add (nombre+"-"+ip);
+		listaAlumnos.options.Clear ();
+		listaAlumnosRes.options.Clear ();
 		listaAlumnos.AddOptions (listaAlumnosParaMostrar);
 		listaAlumnosRes.AddOptions (listaAlumnosParaMostrar);
 	}

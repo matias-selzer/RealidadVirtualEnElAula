@@ -18,7 +18,13 @@ public class Pregunta : MonoBehaviour {
 	}
 
 	public void asignarRespuesta(int r){
-		rElegida = r + "";
+		if(r==1)
+			rElegida = r1 + "";
+		else if(r==2)
+			rElegida = r2 + "";
+		else if(r==3)
+			rElegida = r3 + "";
+
 		string salida = pregunta + "\n" + rElegida;
 		if (rElegida.Equals (respuesta)) {
 			salida += "\nCORRECTO";

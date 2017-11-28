@@ -2647,12 +2647,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dadc39973b61df648b1928ef72a99568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pregunta: Como me llamo?
-  r1: Pepe
-  r2: "Mart\xEDn"
-  r3: Dana
+  pregunta: "\xBFEste bote corresponde a los t\xEDpicos botes utilizados por los pescadores
+    artesanales?"
+  r1: Si
+  r2: No
+  r3: 
   rElegida: 
-  respuesta: Dana
+  respuesta: No
 --- !u!114 &419782226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3570,12 +3571,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dadc39973b61df648b1928ef72a99568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pregunta: Como me llamo?
-  r1: Pepe
-  r2: "Mart\xEDn"
-  r3: Dana
+  pregunta: 'La comida preferida de la gaviota es:'
+  r1: Juncos
+  r2: Cangrejos
+  r3: Insectos
   rElegida: 
-  respuesta: Dana
+  respuesta: Cangrejos
 --- !u!114 &578705785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5930,12 +5931,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dadc39973b61df648b1928ef72a99568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pregunta: Como me llamo?
-  r1: Pepe
-  r2: "Mart\xEDn"
-  r3: Dana
+  pregunta: "\xBFLos juncos se llevan bien en ambientes con agua?"
+  r1: Si
+  r2: No
+  r3: 
   rElegida: 
-  respuesta: Dana
+  respuesta: Si
 --- !u!114 &951308474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11281,12 +11282,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dadc39973b61df648b1928ef72a99568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pregunta: Como me llamo?
-  r1: Pepe
-  r2: "Mart\xEDn"
-  r3: Dana
+  pregunta: 'Los delfines se alimentan de:'
+  r1: Tiburones
+  r2: Orcas
+  r3: Peces
   rElegida: 
-  respuesta: Dana
+  respuesta: Peces
 --- !u!114 &1164321331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15488,12 +15489,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dadc39973b61df648b1928ef72a99568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pregunta: Como me llamo?
-  r1: Pepe
-  r2: "Mart\xEDn"
-  r3: Dana
+  pregunta: 'Los cangrejos tienen una vida promedio de:'
+  r1: "10 a\xF1os"
+  r2: "100 a\xF1os"
+  r3: "1 a\xF1os"
   rElegida: 
-  respuesta: Dana
+  respuesta: "10 a\xF1os"
 --- !u!114 &1829644441
 MonoBehaviour:
   m_ObjectHideFlags: 0

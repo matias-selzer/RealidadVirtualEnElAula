@@ -2947,7 +2947,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1510863284}
-        m_MethodName: initializeServer
+        m_MethodName: comenzarRecorrido
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4526,6 +4526,7 @@ GameObject:
   - component: {fileID: 1510863281}
   - component: {fileID: 1510863283}
   - component: {fileID: 1510863284}
+  - component: {fileID: 1510863285}
   m_Layer: 0
   m_Name: CoordinadorDeRed
   m_TagString: Untagged
@@ -4596,8 +4597,20 @@ MonoBehaviour:
   cantidadConectados: {fileID: 2031001144}
   bComenzar: {fileID: 1001009634}
   bIniciarServidor: {fileID: 1161070361}
-  listaAlumnos: {fileID: 0}
-  listaAlumnosRes: {fileID: 0}
+  listaAlumnos: {fileID: 881664143}
+  listaAlumnosRes: {fileID: 138055649}
+--- !u!148 &1510863285
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1510863280}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 1510863282}
+  m_ViewID:
+    m_ID: 1
+    m_Type: 1
 --- !u!1 &1530973884
 GameObject:
   m_ObjectHideFlags: 0
